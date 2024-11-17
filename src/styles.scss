@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+$textMain: white;
+$bgLow: rgb(14, 14, 16);
+$bgMid: rgb(24, 24, 27);
+$bgHigh: rgb(31, 31, 35);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: $textMain;
+  background-color: $bgLow;
+}
