@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+
+$buttonGridGap: 3px;
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: $bgHigh;
+  padding: calc($buttonGridGap * 2);
+  
+  &__preview {
+    display: flex;
+    justify-content: flex-end;
+    height: 1rem;
+  }
+
+  &__screen {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 72px;
+    line-height: normal;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: $buttonGridGap;
+
+    div {
+      display: flex;
+      gap: $buttonGridGap;
+    }
+  }
+}
