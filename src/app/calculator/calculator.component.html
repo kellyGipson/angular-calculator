@@ -1,17 +1,29 @@
 <div class="calculator">
   <div class="calculator__preview">
-    <span>1 + 1 + 1</span>
+    <span>{{ calculator.getPreviewValue$() | async }}</span>
   </div>
 
   <div class="calculator__screen">
-    <span>0</span>
+    <span>{{ valueFormControl.value }}</span>
   </div>
   
   <div class="calculator__buttons">
     <div>
-      <button mat-raised-button>1</button>
-      <button mat-raised-button>+</button>
-      <button mat-raised-button color="primary">=</button>
+      <button
+        mat-raised-button
+        (click)="updateValue(1)"
+      >1</button>
+
+      <button
+        mat-raised-button
+        (click)="registerKeyToken('+')"
+      >+</button>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="registerKeyToken('=')"
+      >=</button>
     </div>
   </div>
 </div>

@@ -5,7 +5,7 @@ $buttonGridGap: 3px;
 .calculator {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 400px;
   background-color: $bgHigh;
   padding: calc($buttonGridGap * 2);
   
@@ -19,7 +19,7 @@ $buttonGridGap: 3px;
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    font-size: 72px;
+    font-size: 44px;
     line-height: normal;
   }
 
